@@ -1,0 +1,107 @@
+/* Ogólny styl dla całego dokumentu */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('tło3.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Styl dla nagłówka */
+header {
+    background-image: url('tło2.png');
+    color: white;
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styl dla tytułu strony w nagłówku */
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Styl dla nawigacji */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/* Styl dla głównej zawartości */
+main {
+    padding: 10px;
+}
+
+/* Styl dla nagłówka sekcji */
+main h2 {
+    text-align: center;
+    background-image: url('tło2.png');
+    font-family: "Pacifico", cursive;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #ffffff; /* Ciemny kolor tekstu */
+}
+
+/* Styl dla sekcji informacji o sprzęcie */
+.equipment-info {
+    border: 1px solid #b1beff76;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 204, 255, 0.11); /* Przezroczystość 0.8 */
+    display: flex;
+    align-items: center;
+}
+
+/* Styl dla obrazka narzędzia */
+.equipment-info img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+/* Styl dla tekstu o sprzęcie */
+.equipment-info div {
+    max-width: 600px;
+}
+
+.equipment-info h3 {
+    margin: 0 0 20px 0;
+}
+
+.equipment-info p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Styl dla stopki */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Przezroczystość 0.8 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
