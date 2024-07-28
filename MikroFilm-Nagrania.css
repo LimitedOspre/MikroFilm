@@ -113,12 +113,14 @@ footer {
 
     .recording {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
     .recording iframe {
         width: 300px;
         height: 188px;
+        margin-bottom: 10px;
     }
 
     .recording .description {
