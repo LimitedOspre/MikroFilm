@@ -79,6 +79,8 @@ main h3 {
 
 .recording iframe {
     flex-shrink: 0;
+    width: 400px;
+    height: 250px;
 }
 
 .recording .description {
@@ -101,4 +103,57 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* wygląd dla mniejczych urządzień */
+@media (max-width: 800px) {
+    main {
+        padding: 20px;
+    }
+
+    .recording {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .recording iframe {
+        width: 300px;
+        height: 188px;
+    }
+
+    .recording .description {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .recording p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media (min-width: 801px) {
+    main {
+        padding: 40px;
+    }
+
+    .recording {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .recording iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .recording .description {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .recording p {
+        font-size: 2.5em;
+        text-align: left;
+    }
 }
