@@ -10,6 +10,169 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
+<style>
+    /* Ogólny styl dla całego dokumentu */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('https://raw.githubusercontent.com/LimitedOspre/MikroFilm/refs/heads/main/tło1.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    /* Styl dla nagłówka */
+    header {
+        background-image: url('tło.png');
+        color: white;
+        padding: 0 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Styl dla tytułu strony w nagłówku */
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    /* Styl dla nawigacji */
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+    }
+    
+    nav ul li a.active {
+        font-weight: bold;
+    }
+    
+    /* Styl dla głównej zawartości */
+    main {
+        padding: 40px;
+    }
+    
+    h1, h2 {
+        color: #ffffff;
+    }
+    
+    main h3 {
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        background-image: url('tło.png');
+        background-size: cover;
+        padding: 40px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Styl dla sekcji nagrań */
+    .recording {
+        display: flex;
+        align-items: center;
+        border: 1px solid #e5e5e500;
+        border-radius: 20px;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #1e6c93cc; /* Przezroczystość 0.8 */
+    }
+    
+    .recording iframe {
+        flex-shrink: 0;
+        width: 400px;
+        height: 250px;
+    }
+    
+    .recording .description {
+        margin-left: 20px;
+    }
+    
+    .recording p {
+        font-size: 2.5em;
+        margin: 0;
+        font-family: "Comfortaa", sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    
+    /* Styl dla stopki */
+    footer {
+        background-color: rgba(51, 51, 51, 0.8); /* Przezroczystość 0.8 */
+        color: white;
+        text-align: center;
+        padding: 0 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    /* wygląd dla mniejczych urządzień */
+    @media (max-width: 800px) {
+        main {
+            padding: 20px;
+        }
+    
+        .recording {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .recording iframe {
+            width: 300px;
+            height: 188px;
+            margin-bottom: 10px;
+        }
+    
+        .recording .description {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    
+        .recording p {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+    
+    @media (min-width: 801px) {
+        main {
+            padding: 40px;
+        }
+    
+        .recording {
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .recording iframe {
+            width: 400px;
+            height: 250px;
+        }
+    
+        .recording .description {
+            margin-left: 20px;
+            margin-top: 0;
+        }
+    
+        .recording p {
+            font-size: 2.5em;
+            text-align: left;
+        }
+    }
+</style>
 <body>
     <header>
         <img src="https://raw.githubusercontent.com/LimitedOspre/MikroFilm/refs/heads/main/mały-mikroskop.png" alt="mikroskop">
