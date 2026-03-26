@@ -103,5 +103,72 @@ footer {
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    height: 50px;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer p{
+    margin-left: 15px;
+}
+.social{
+    display: flex;
+  }
+
+.social li{text-align: center;
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+    align-self: center;
+}
+.social li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    /* background: #d35400; */
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+}
+.social li:nth-child(1):before{
+  background: #ff0000;
+}
+.social li:nth-child(2):before{
+  background: #7b02b7;
+}
+.social li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  /* box-shadow: 0 0 15px #d35400; */
+}
+.social li:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #ff0000;
+}
+.social li:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #7b02b7;
+}
+.social li:nth-child(1):hover{
+    color: #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+  }
+.social li:nth-child(2):hover{
+  color: #7b02b7;
+  box-shadow: 0 0 15px #7b02b7;
+  text-shadow: 0 0 15px #7b02b7;
 }
